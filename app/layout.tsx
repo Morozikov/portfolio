@@ -1,6 +1,7 @@
 import { Providers } from "@/providers";
 import "./globals.css";
 import type { Metadata } from "next";
+import { AppSidebar } from "@/components/AppSidebar";
 
 export const metadata: Metadata = {
   title: "Morozikov Vitalii",
@@ -15,7 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body>
-        <Providers>{children}</Providers>
+        <Providers>
+          <div className="flex flex-row">
+            <AppSidebar />
+            {children}
+          </div>
+        </Providers>
       </body>
     </html>
   );
