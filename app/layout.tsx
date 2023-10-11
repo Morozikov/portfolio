@@ -1,8 +1,8 @@
 import { Providers } from "@/providers";
 import "./globals.css";
 import type { Metadata } from "next";
-import { AppSidebar } from "@/components/AppSidebar";
-import { AppHeader } from "@/components/AppHeader";
+import AppSidebar from "@/components/AppSidebar";
+import AppHeader from "@/components/AppHeader";
 
 export const metadata: Metadata = {
 	title: "Morozikov Vitalii",
@@ -21,7 +21,9 @@ export default function RootLayout({
 			<body className="container">
 				<Providers>
 					<div className="flex flex-row">
-						<AppSidebar />
+						<div className="h-screen p-2 flex items-center justify-center">
+							<AppSidebar />
+						</div>
 						<div className="flex flex-col w-full p-2">
 							<AppHeader />
 							<main>{children}</main>
