@@ -5,3 +5,7 @@
 .active{
 @apply text-white font-bold bg-warning;
 }
+
+.section{
+@apply h-full px-16 py-10 
+}

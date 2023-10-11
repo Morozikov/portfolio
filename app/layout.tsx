@@ -20,15 +20,9 @@ export default function RootLayout({
 			className="dark scroll-smooth">
 			<body>
 				<Providers>
-					<div className="flex flex-row">
-						<div className="h-screen p-2 flex items-center justify-center">
-							<AppSidebar />
-						</div>
-						<div className="flex flex-col w-full p-2">
-							<AppHeader />
-							<main>{children}</main>
-						</div>
-					</div>
+					<AppHeader />
+					<AppSidebar />
+					<main className="h-screen">{children}</main>
 				</Providers>
 			</body>
 		</html>
