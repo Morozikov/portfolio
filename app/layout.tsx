@@ -17,8 +17,8 @@ export default function RootLayout({
 	return (
 		<html
 			lang="en"
-			className="dark">
-			<body className="container">
+			className="dark scroll-smooth">
+			<body>
 				<Providers>
 					<div className="flex flex-row">
 						<div className="h-screen p-2 flex items-center justify-center">
